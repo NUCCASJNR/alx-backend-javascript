@@ -7,6 +7,7 @@ This is the readme for all my alx-africa Backend Javascript tasks
 Directories | Description
 ------------| ----------
 [0x00-ES6_basic](./0x00-ES6_basic) | JavaScript Basics
+[0x01-ES6_promise](./0x01-ES6_promise) | JavaScript Promises
 
 ## STUDENT NAME AND EMAIL ADDRESS
  ALAREEF
