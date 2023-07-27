@@ -11,7 +11,7 @@ export default class Pricing {
     if (typeof value === 'number') {
       this._amount = value;
     } else {
-      throw new TypeError('Amount must be a number');
+      throw new TypeError('amount must be a number');
     }
   }
 
@@ -40,6 +40,6 @@ export default class Pricing {
   }
 
   static convertPrice(amount, conversionRate) {
-    return (`${amount}*${conversionRate}`);
+    return (amount* conversionRate);
   }
 }
