@@ -10,7 +10,7 @@
 
 /* eslint-disable */
 const getListStudents = (id, firstName, location) => {
-  const student1 = { id: id, firstName: 'Guillaume', location: 'San Francisco' };
+  const student1 = { id: 1, firstName: 'Guillaume', location: 'San Francisco' };
   const student2 = { id: 2, firstName: 'James', location: 'Columbia' };
   const student3 = { id: 5, firstName: 'Serena', location: 'San Francisco' };
   const newarr = [];
