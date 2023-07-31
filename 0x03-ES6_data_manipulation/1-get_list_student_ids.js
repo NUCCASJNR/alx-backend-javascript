@@ -5,7 +5,7 @@ import getListStudents from './0-get_list_students';
 
 const getListStudentIds = (getListStudents) => {
   if (!Array.isArray(getListStudents)) {
-    return [];
+    return ([]);
   }
   const student_ids = [];
   getListStudents.forEach((student_id) => {
