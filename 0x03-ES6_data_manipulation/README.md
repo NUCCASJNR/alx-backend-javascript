@@ -1,6 +1,6 @@
 ## 0x03-ES6_data_manipulation
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/6ab7bec4727cb5c91257.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230731T061851Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3bb190872f1b4c0801014040bd45848ef268a86002c70bbbc7c52e0159ba1160)
+![image](https://www.google.com/search?tbs=simg:CAQSmwIJ4XN1TFIe5xQajwILEKjU2AQaBAg9CEIMCxCwjKcIGjoKOAgEEhSmL4wOsDX8OdAWgBa1KLM_17ivRDhoa8rdI1YAdrkd9RqbyTgzItbxZx2VViBL7RI8gBTAEDAsQjq7-CBoKCggIARIE6CY0KgwLEJ3twQkaogEKJwoTZmljdGlvbmFsIGNoYXJhY3RlctqliPYDDAoKL20vMDJoN2xrdAocCglmb3IgYWR1bHTapYj2AwsKCS9hLzkzY3dfeQohCg1waG90byBjYXB0aW9u2qWI9gMMCgovbS8wYjc1d2c0ChkKBmNvbWVkedqliPYDCwoJL20vMDVwNTUzChsKCGxhbmd1YWdl2qWI9gMLCgkvai8yc2hfeTQM&sxsrf=AB5stBg8ft189iIQQGntXeraMiqqS32ZAA:1690785301008&q=javascript+array+meme&tbm=isch&sa=X&ved=2ahUKEwje7IeKqriAAxVJFcAKHaRfDgUQwg56BAgHEAE)
 
 ## Resources
 
