@@ -1,7 +1,15 @@
 ## 0x03-ES6_data_manipulation
 
-![image](https://www.google.com/search?tbs=simg:CAQSmwIJ4XN1TFIe5xQajwILEKjU2AQaBAg9CEIMCxCwjKcIGjoKOAgEEhSmL4wOsDX8OdAWgBa1KLM_17ivRDhoa8rdI1YAdrkd9RqbyTgzItbxZx2VViBL7RI8gBTAEDAsQjq7-CBoKCggIARIE6CY0KgwLEJ3twQkaogEKJwoTZmljdGlvbmFsIGNoYXJhY3RlctqliPYDDAoKL20vMDJoN2xrdAocCglmb3IgYWR1bHTapYj2AwsKCS9hLzkzY3dfeQohCg1waG90byBjYXB0aW9u2qWI9gMMCgovbS8wYjc1d2c0ChkKBmNvbWVkedqliPYDCwoJL20vMDVwNTUzChsKCGxhbmd1YWdl2qWI9gMLCgkvai8yc2hfeTQM&sxsrf=AB5stBg8ft189iIQQGntXeraMiqqS32ZAA:1690785301008&q=javascript+array+meme&tbm=isch&sa=X&ved=2ahUKEwje7IeKqriAAxVJFcAKHaRfDgUQwg56BAgHEAE)
+![image](https://lh3.googleusercontent.com/f2jszevCKBCjekeKGu34VaBDNzDVgTJhsDiIJd-JghqfA43GvyROHEOYoqHj5JYNWbaX1bE=s156)
 
 ## Resources
 
 - [Array](https://intranet.alxswe.com/rltoken/bcXqK1IaIHtrZ45sv0RxsQ)
+
+- [Typed Array](https://intranet.alxswe.com/rltoken/YZ5RtzAPTaWtF00MYbXuVw)
+
+- [Set Data Structure](https://intranet.alxswe.com/rltoken/Ch8vq39y9QnlTMr8CymgEg)
+
+- [Map Data Structure](https://intranet.alxswe.com/rltoken/W29MV3f8Ii4HmeJSALNIpw)
+
+- [Weak Map](https://intranet.alxswe.com/rltoken/pSetFVFeIR660GPE0flPdg)
