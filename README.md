@@ -9,6 +9,7 @@ Directories | Description
 [0x00-ES6_basic](./0x00-ES6_basic) | JavaScript Basics
 [0x01-ES6_promise](./0x01-ES6_promise) | JavaScript Promises
 [0x02-ES6_classes](./0x02-ES6_classes) | JavaScipt Classes
+[0x03-ES6_data_manipulation](./0x03-ES6_data_manipulation) | DOM
 
 ## STUDENT NAME AND EMAIL ADDRESS
  ALAREEF
