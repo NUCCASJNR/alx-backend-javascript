@@ -15,4 +15,3 @@ const getListStudentIds = (getListStudents) => {
 };
 
 export default getListStudentIds;
-
