@@ -7,11 +7,7 @@ const getListStudentIds = (getListStudents) => {
   if (!Array.isArray(getListStudents)) {
     return ([]);
   }
-  const student_ids = [];
-  getListStudents.forEach((student_id) => {
-    student_ids.push(student_id.id);
-  });
-  return student_ids;
+  return getListStudents.map((student_id) => student_id.id);
 };
 
 export default getListStudentIds;
