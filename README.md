@@ -10,7 +10,7 @@ Directories | Description
 [0x01-ES6_promise](./0x01-ES6_promise) | JavaScript Promises
 [0x02-ES6_classes](./0x02-ES6_classes) | JavaScipt Classes
 [0x03-ES6_data_manipulation](./0x03-ES6_data_manipulation) | DOM
-
+[0x04-TypeScript](./0x04-TypeScript) | TypeScript
 ## STUDENT NAME AND EMAIL ADDRESS
  ALAREEF
 
