@@ -13,7 +13,7 @@ const countStudents = (CsvFilePath) => {
     if (fieldIndex !== -1) {
       const csStudents = [];
       const sweStudents = []; // To store the first names of SWE students
-      for (let i = 1; i < rows.length; i++) {
+      for (let i = 1; i < rows.length; i += 1) {
         const row = rows[i].split(',');
         if (row[fieldIndex] === 'SWE') {
           sweStudents.push(row[firstNameIndex]);
@@ -21,7 +21,7 @@ const countStudents = (CsvFilePath) => {
           csStudents.push(row[firstNameIndex]);
         }
       }
-      console.log(rows.length - 1);
+      console.log(`Number of students: ${rows.length - 1}`);
       console.log(`Number of students in CS: ${csStudents.length}. List: ${csStudents.join(', ')}`);
       console.log(`Number of students in SWE: ${sweStudents.length}. List: ${sweStudents.join(', ')}`);
     }
