@@ -9,6 +9,7 @@ const countStudents = (CsvFilePath) => new Promise((resolve, reject) => {
       reject(new Error('Cannot load the database'));
     } else {
       const rows = csvData.split('\n');
+      let count = 0;
       const headerRow = rows[0].split(',');
       const fieldIndex = headerRow.indexOf('field');
       const firstNameIndex = headerRow.indexOf('firstname');
@@ -16,19 +17,23 @@ const countStudents = (CsvFilePath) => new Promise((resolve, reject) => {
         const csStudents = [];
         const sweStudents = []; // To store the first names of SWE students
         for (let i = 1; i < rows.length; i += 1) {
-          const row = rows[i].split(',');
-          if (row[fieldIndex] === 'SWE') {
-            sweStudents.push(row[firstNameIndex]);
-          } if (row[fieldIndex] === 'CS') {
-            csStudents.push(row[firstNameIndex]);
+          if (rows[i].length > 0) {
+            count += 1;
+            const row = rows[i].split(',');
+            if (row[fieldIndex] === 'SWE') {
+              sweStudents.push(row[firstNameIndex]);
+            }
+            if (row[fieldIndex] === 'CS') {
+              csStudents.push(row[firstNameIndex]);
+            }
           }
         }
         const result = {
-          totalStudents: rows.length - 1,
+          totalStudents: count,
           csStudentsCount: csStudents.length,
           sweStudentsCount: sweStudents.length,
           csStudentsList: csStudents.join(', '),
-          sweStudentsList: sweStudents.join(', '),
+          sweStudentsList: sweStudents.join(', ')
         };
         resolve(result);
         console.log(`Number of students: ${result.totalStudents}`);
