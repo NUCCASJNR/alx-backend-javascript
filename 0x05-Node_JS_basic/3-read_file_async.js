@@ -2,7 +2,9 @@
 
 // Reading a file asynchronously with Node.js
 const fs = require('fs');
+
 const countStudents = (CsvFilePath) => {
+  let count = 0;
   return new Promise((resolve, reject) => {
     fs.readFile(CsvFilePath, 'utf-8', (error, csvData) => {
       if (error) {
@@ -15,20 +17,24 @@ const countStudents = (CsvFilePath) => {
         if (fieldIndex !== -1) {
           const csStudents = [];
           const sweStudents = []; // To store the first names of SWE students
-          for (let i = 1; i < rows.length; i++) {
-            const row = rows[i].split(',');
-            if (row[fieldIndex] === 'SWE') {
-              sweStudents.push(row[firstNameIndex]);
-            } if (row[fieldIndex] === 'CS') {
-              csStudents.push(row[firstNameIndex]);
+          for (let i = 1; i < rows.length; i += 1) {
+            if (rows[i].length > 0) {
+              count += 1;
+              const row = rows[i].split(',');
+              if (row[fieldIndex] === 'SWE') {
+                sweStudents.push(row[firstNameIndex]);
+              }
+              if (row[fieldIndex] === 'CS') {
+                csStudents.push(row[firstNameIndex]);
+              }
             }
           }
           const result = {
-            totalStudents: rows.length - 1,
+            totalStudents: count,
             csStudentsCount: csStudents.length,
             sweStudentsCount: sweStudents.length,
             csStudentsList: csStudents.join(', '),
-            sweStudentsList: sweStudents.join(', ')
+            sweStudentsList: sweStudents.join(', '),
           };
           resolve(result);
           console.log(`Number of students: ${result.totalStudents}`);
