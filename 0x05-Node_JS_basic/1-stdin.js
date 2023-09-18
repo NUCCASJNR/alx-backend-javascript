@@ -8,7 +8,7 @@ console.log('Welcome to Holberton School, what is your name?');
 process.stdin.on('data', (input) => {
   handleUserInput(input);
 });
-process.on('exit', () => {
-  console.log('This important software is now closing');
+process.on('end', () => {
+  console.log('This important software is now closing\n');
 });
 module.exports = handleUserInput;
