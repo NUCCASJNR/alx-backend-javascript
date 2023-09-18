@@ -10,7 +10,7 @@ const HostName = 'localhost';
 const app = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end(`${DisplayMessage}\n`);
+  res.end(`${DisplayMessage}`);
 });
 
 app.listen(port, HostName, () => {
