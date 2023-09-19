@@ -22,19 +22,19 @@ const app = http.createServer((req, res) => {
           csStudentsCount: responseObject.csStudentsCount,
           sweStudentsCount: responseObject.sweStudentsCount,
           csStudentsList: responseObject.csStudentsList,
-          sweStudentsList: responseObject.sweStudentsList,
+          sweStudentsList: responseObject.sweStudentsList
         };
         res.end(
           `This is the list of our students
-Number of students: ${final.totalStudents}\n`
-          + `Number of students in CS: ${final.csStudentsCount}. List: ${final.csStudentsList}\n`
-          + `Number of students in SWE: ${final.sweStudentsCount}. List: ${final.sweStudentsList}`,
+Number of students: ${final.totalStudents}\n` +
+          `Number of students in CS: ${final.csStudentsCount}. List: ${final.csStudentsList}\n` +
+          `Number of students in SWE: ${final.sweStudentsCount}. List: ${final.sweStudentsList}`
         );
       })
       .catch((error) => {
         res.statusCode = 500;
         res.setHeader('Content-Type', 'text/plain');
-        res.end('Internal Server Error');
+        res.end(`Internal Server Error: ${error}`);
       });
   } else {
     res.statusCode = 404;
