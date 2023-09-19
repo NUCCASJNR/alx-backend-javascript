@@ -20,6 +20,7 @@ app.get('/students', (req, res) => {
   countStudents(CSV_FILE)
     .then((result) => {
       res.statusCode = 200;
+      res.set('Content-Type', 'text/plain');
       const resultString = JSON.stringify(result);
       const responseObject = JSON.parse(resultString);
       const final = {
