@@ -24,16 +24,14 @@ const app = http.createServer((req, res) => {
           csStudentsList: responseObject.csStudentsList,
           sweStudentsList: responseObject.sweStudentsList,
         };
-        // Use a template literal without line breaks
         res.end(
           `This is the list of our students
-Number of Students: ${final.totalStudents}\n`
+Number of students: ${final.totalStudents}\n`
           + `Number of students in CS: ${final.csStudentsCount}. List: ${final.csStudentsList}\n`
           + `Number of students in SWE: ${final.sweStudentsCount}. List: ${final.sweStudentsList}`,
         );
       })
       .catch((error) => {
-        res.statusCode = 500;
         res.setHeader('Content-Type', 'text/plain');
         res.end(`${error}`);
       });
@@ -47,3 +45,4 @@ Number of Students: ${final.totalStudents}\n`
 app.listen(port, HostName, () => {
   console.log(`Server listening at http://${HostName}:${port}`);
 });
+module.exports = app;

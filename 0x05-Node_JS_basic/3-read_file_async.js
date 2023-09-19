@@ -7,7 +7,10 @@ const countStudents = (CsvFilePath) => {
   let count = 0;
   return new Promise((resolve, reject) => {
     fs.readFile(CsvFilePath, 'utf-8', (error, csvData) => {
-      if (error) {
+      if (CsvFilePath === undefined) {
+        reject(new Error('Cannot load the database'));
+        return;
+      } else if (error) {
         reject(new Error('Cannot load the database'));
       } else {
         const rows = csvData.split('\n');
