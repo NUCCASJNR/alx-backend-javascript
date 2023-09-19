@@ -44,6 +44,5 @@ Number of students: ${final.totalStudents}\n`
 });
 
 app.listen(port, HostName, () => {
-  console.log(`Server listening at http://${HostName}:${port}`);
 });
 module.exports = app;
