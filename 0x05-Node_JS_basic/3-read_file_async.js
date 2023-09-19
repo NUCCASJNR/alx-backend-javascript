@@ -9,7 +9,8 @@ const countStudents = (CsvFilePath) => {
     fs.readFile(CsvFilePath, 'utf-8', (error, csvData) => {
       if (CsvFilePath === undefined) {
         reject(new Error('Cannot load the database'));
-      } else if (error) {
+      }
+      if (error) {
         reject(new Error('Cannot load the database'));
       } else {
         const rows = csvData.split('\n');
@@ -36,7 +37,7 @@ const countStudents = (CsvFilePath) => {
             csStudentsCount: csStudents.length,
             sweStudentsCount: sweStudents.length,
             csStudentsList: csStudents.join(', '),
-            sweStudentsList: sweStudents.join(', ')
+            sweStudentsList: sweStudents.join(', '),
           };
           resolve(result);
           console.log(`Number of students: ${result.totalStudents}`);
