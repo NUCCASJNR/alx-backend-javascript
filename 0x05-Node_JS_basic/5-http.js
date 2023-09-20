@@ -34,7 +34,7 @@ Number of students: ${final.totalStudents}\n`
       .catch((error) => {
         res.statusCode = 500;
         res.setHeader('Content-Type', 'text/plain');
-        res.end(`Internal Server Error: ${error}`);
+        res.end(error.message.toString());
       });
   } else {
     res.statusCode = 404;
