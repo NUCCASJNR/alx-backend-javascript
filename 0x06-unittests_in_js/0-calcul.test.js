@@ -10,7 +10,7 @@ const calculateNumber = require('./0-calcul');
 
 describe('a simple Addition calculator', () => {
   it('should add two numbers', () => {
-    assert.equal(calculateNumber(1, 3), 4);
+    assert.strictEqual(calculateNumber(1, 3), 4);
   });
   it('should add two floats', () => {
     assert.equal(calculateNumber(2.3, 3.5), 6);
