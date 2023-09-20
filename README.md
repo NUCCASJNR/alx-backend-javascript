@@ -12,6 +12,7 @@ Directories | Description
 [0x03-ES6_data_manipulation](./0x03-ES6_data_manipulation) | DOM
 [0x04-TypeScript](./0x04-TypeScript) | TypeScript
 [0x05-Node_JS_basic](./0x05-Node_JS_basic) | Nodejs Basics
+[0x06-unittests_in_js](./0x06-unittests_in_js) | Unittest in Nodejs
 
 ## STUDENT NAME AND EMAIL ADDRESS
  ALAREEF
