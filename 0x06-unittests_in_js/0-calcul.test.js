@@ -6,7 +6,7 @@
  */
 
 const assert = require('assert');
-const calculateNumber = require('./0-calcul');
+const calculateNumber = require('./0-calcul.js');
 
 describe('a simple Addition calculator', () => {
   it('should add two numbers', () => {
