@@ -18,7 +18,7 @@ const Utils = {
       return roundA / roundB;
     }
     return null;
-  },
+  }
 };
 
 module.exports = Utils;

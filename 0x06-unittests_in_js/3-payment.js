@@ -3,10 +3,10 @@
 /*
 * Payment gateway
  */
-const utils = require('./utils').calculateNumber;
+const Utils = require('./utils').calculateNumber;
 
 const sendPaymentRequestToApi = (totalAmount, totalShipping) => {
-  const result = utils('SUM', totalAmount, totalShipping);
+  const result = Utils('SUM', totalAmount, totalShipping);
   return (`The total is: ${result}`);
 };
 module.exports = sendPaymentRequestToApi;
