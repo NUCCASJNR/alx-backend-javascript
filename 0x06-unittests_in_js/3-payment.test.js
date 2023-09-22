@@ -12,16 +12,10 @@ const Utils = require('./utils');
 
 describe('send Payment Request to API', () => {
   it('should test payment gateway', () => {
-    const spy = sinon.spy(Utils.calculateNumber);
+    const paymentSpy = sinon.spy(Utils, 'calculateNumber');
     sendPaymentRequestToApi(100, 20);
-    expect(spy.calledWith(100, 20)).to.equal(false);
-  });
-});
-
-describe('test Utils not called once', () => {
-  it('should test payment gateway', () => {
-    const spy = sinon.spy(Utils.calculateNumber);
-    sendPaymentRequestToApi(100, 20);
-    assert.equal(spy.calledOnce, false);
+    expect(paymentSpy.calledWith('SUM', 100, 20)).to.be.true;
+    expect(paymentSpy.calledOnce).to.be.true;
+    paymentSpy.restore();
   });
 });
