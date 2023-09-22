@@ -50,19 +50,30 @@ describe('API integration test', () => {
 });
 
 describe('API integration test', () => {
-  const UrlId = 'http://localhost:7865/login';
+  const LoginUrl = 'http://localhost:7865/login';
   it('POST /login to add a new user', (done) => {
-    request.post(`${UrlId}`, (err, res, body) => {
-      expect(res.statusCode).to.be.equal(201);
-      done();
-    });
+    const userData = { userName: 'idan'};
+    request.post(
+      {
+        url: LoginUrl,
+        json: userData,
+      },
+      (err, res, body) => {
+        if (err) {
+          return done(err)
+        }
+        expect(res.statusCode).to.be.equal(201);
+        expect(res.body).to.deep.equal('Welcome idan');
+        done()
+      }
+    )
   });
 });
 
 describe('API integration test', () => {
-  const UrlId = 'http://localhost:7865/available_payments';
+  const PaymentUrl = 'http://localhost:7865/available_payments';
   it('GET /available_payments to test available payments list', (done) => {
-    request.get(`${UrlId}`, (err, res, body) => {
+    request.get(`${PaymentUrl}`, (err, res, body) => {
       expect(res.statusCode).to.be.equal(200);
       const PaymentMethods = {
         payment_methods: {
