@@ -24,16 +24,19 @@ app.get('/available_payments', (req, res) => {
   const PaymentMethods = {
     payment_methods: {
       credit_cards: true,
-      paypal: false,
-    },
+      paypal: false
+    }
   };
   res.status(200).json(PaymentMethods);
 });
 
 app.post('/login', (req, res) => {
-  const { userName } = req.body;
+  let username = '';
+  if (req.body) {
+    username = req.body.userName;
+  }
   res.status(201);
-  res.end(`Welcome ${userName}`);
+  res.end(`Welcome ${username}`);
 });
 
 app.listen(port, () => {
