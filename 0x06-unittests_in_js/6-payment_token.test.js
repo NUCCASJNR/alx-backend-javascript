@@ -13,7 +13,7 @@ describe('Payment token', function () {
     const success = true;
     getPaymentTokenFromAPI(success)
       .then((data) => {
-        expect(data).to.be.include;
+        expect(data).to.be.exist;
         done();
       })
       .catch((err) => {
