@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 app.get('/cart/:id(\\d+)', (req, res) => {
   const { id } = req.params;
   const result = 'Payment methods for cart';
-  res.send(`${result} : ${id}`);
+  res.send(`${result} ${id}`);
 });
 
 app.listen(port, () => {

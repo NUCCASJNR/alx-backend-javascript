@@ -33,7 +33,7 @@ describe('API integration test', () => {
   it ('GET /cart/id return payment methods for id', (done) => {
     request.get(`${UrlId}`, (err, res, body) => {
       expect(res.statusCode).to.be.equal(200);
-      expect(res.body).to.be.equal('Payment methods for cart : 12')
+      expect(res.body).to.be.equal('Payment methods for cart 12')
       done();
     });
     });
