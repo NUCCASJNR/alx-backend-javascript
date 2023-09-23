@@ -62,7 +62,7 @@ describe('API integration test', () => {
         if (err) {
           return done(err)
         }
-        expect(res.statusCode).to.be.equal(201);
+        expect(res.statusCode).to.be.equal(200);
         expect(res.body).to.deep.equal('Welcome idan');
         done()
       }
